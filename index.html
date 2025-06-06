@@ -2,40 +2,29 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <img id="spinner" src="spinner.gif" alt="carregando" style="display:none; width= 40px; margin-bottom: 20px;" />
   <div class="container">
     <div class="login-left">
-      <h1>Faça seu <span class="highlight">Login.</span></h1>
-
+      <h1>Faça <span class="highlight">Login</span></h1>
       <form id="login-form">
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <input type="email" id="email" required />
-
-        <label for="password">Senha</label>
+        <label for="password">Senha:</label>
         <input type="password" id="password" required />
-
-        <a href="#" class="link">Esqueci minha senha</a>
-
         <button type="submit">Entrar</button>
-
-        <a href="#" class="link">Ainda não tenho uma conta</a>
-
-        <p id="message"></p>
+        <div id="spinner" style="display: none;">
+          <img src="spinner.gif" width="32" alt="Carregando..."/>
+        </div>
+        <div id="message"></div>
       </form>
+      <footer>2025 | Desenvolvido por Helberth Renan Gomes de Sousa</footer>
     </div>
-
     <div class="login-right"></div>
   </div>
-
-  <footer>
-    2025 | Desenvolvido por <strong>Helberth Renan Gomes de Sousa</strong>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

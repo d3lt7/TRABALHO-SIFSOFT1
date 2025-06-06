@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
+body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #000;
+  background: #0f0f0f;
+  color: #fff;
 }
 
 .container {
@@ -17,86 +17,68 @@ body, html {
 
 .login-left {
   flex: 1;
-  background-color: #0a0a0a;
-  color: #fff;
-  padding: 60px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .login-left h1 {
-  font-size: 2.8em;
+  font-size: 3em;
   margin-bottom: 40px;
 }
 
 .highlight {
-  background: linear-gradient(90deg, #d53369, #daae51);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f2f;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-label {
-  font-size: 0.9em;
+form label {
+  margin-bottom: 8px;
 }
 
-input {
-  padding: 12px;
-  background-color: #0f0f0f;
-  border: 2px solid;
-  border-image: linear-gradient(90deg, #2b86c5, #e1b12c) 1;
-  border-radius: 10px;
+form input {
+  background: #111;
   color: white;
-  outline: none;
-}
-
-.link {
-  font-size: 0.9em;
-  color: #fff;
-  text-decoration: underline;
-  margin-bottom: 15px;
-  display: inline-block;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #7f00ff, #e100ff) 1;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 20px;
 }
 
 button {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  color: white;
+  font-size: 1.2em;
   padding: 12px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(90deg, #c471f5, #fa71cd, #f9a825);
-  color: white;
-  font-weight: bold;
-  font-size: 1.1em;
   cursor: pointer;
-  transition: transform 0.2s;
-}
-
-button:hover {
-  transform: scale(1.03);
-}
-
-#message {
   margin-top: 10px;
-  font-size: 0.9em;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8em;
+  color: #ccc;
 }
 
 .login-right {
   flex: 1;
-  background: url('https://images.unsplash.com/photo-1600788907410-1ffecb29f3cc?auto=format&fit=crop&w=1280&q=80') center center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
 }
 
-footer {
-  text-align: center;
-  color: white;
-  padding: 10px 0;
-  font-size: 0.85em;
-  background-color: #000;
+#message {
+  margin-top: 10px;
+  font-weight: bold;
 }
+
+/* Página de boas-vindas */
 .welcome-body {
   background: linear-gradient(to right, #141e30, #243b55);
   color: white;
@@ -104,7 +86,6 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
   text-align: center;
 }
 

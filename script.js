@@ -19,10 +19,6 @@ document.getElementById("login-form").addEventListener("submit", async function 
     const data = await response.json();
     spinner.style.display = "none";
 
-    const spinner = document.getElementById("spinner");
-    spinner.style.display = "block"; 
-    spinner.style.display = "none";
-
     if (response.ok) {
       window.location.href = "welcome.html";
     } else {
