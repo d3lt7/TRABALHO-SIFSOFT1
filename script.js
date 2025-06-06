@@ -9,8 +9,11 @@ document.getElementById("login-form").addEventListener("submit", async function 
   message.textContent = "";
   spinner.style.display = "block";
 
+  
+
+
   try {
-    const response = await fetch("https://reqres.in/api/login", {
+    const response = await fetch("/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password })
