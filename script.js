@@ -23,7 +23,7 @@ document.getElementById("login-form").addEventListener("submit", async function 
     spinner.style.display = "none";
 
     if (response.ok) {
-      window.location.href = "welcome.html";
+      window.location.href = Window.location.oringin + "bem-vindo.html";
     } else {
       message.style.color = "tomato";
       message.textContent = "❌ Erro: " + (data.error || "Credenciais inválidas.");
