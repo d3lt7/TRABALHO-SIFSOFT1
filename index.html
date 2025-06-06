@@ -2,22 +2,38 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tela de Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <div class="login-box">
-      <h2>Entrar</h2>
+    <div class="login-left">
+      <h1>Faça seu <span class="highlight">Login.</span></h1>
+
       <form id="login-form">
-        <input type="email" id="email" placeholder="Email" required />
-        <input type="password" id="password" placeholder="Senha" required />
-        <button type="submit">Login</button>
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" required />
+
+        <a href="#" class="link">Esqueci minha senha</a>
+
+        <button type="submit">Entrar</button>
+
+        <a href="#" class="link">Ainda não tenho uma conta</a>
+
         <p id="message"></p>
       </form>
     </div>
+
+    <div class="login-right"></div>
   </div>
+
+  <footer>
+    2025 | Desenvolvido por <strong>Helberth Renan Gomes de Sousa</strong>
+  </footer>
 
   <script src="script.js"></script>
 </body>
