@@ -9,9 +9,6 @@ document.getElementById("login-form").addEventListener("submit", async function 
   message.textContent = "";
   spinner.style.display = "block";
 
-  
-
-
   try {
     const response = await fetch("/api/login", {
       method: "POST",
